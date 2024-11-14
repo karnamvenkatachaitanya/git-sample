@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - WELCOME TO PGS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .signup-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .signup-container h1 {
+            margin-bottom: 10px;
+            font-size: 32px;
+            font-family: 'Pacifico', cursive;
+            color: #333;
+        }
+
+        .signup-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .signup-container input[type="text"],
+        .signup-container input[type="email"],
+        .signup-container input[type="password"],
+        .signup-container input[type="confirm password"] {
+            width: 90%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .signup-container button {
+            width: 50%;
+            padding: 15px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .signup-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .signup-container p {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .signup-container p a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .signup-container p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h1>WELCOME TO PGS</h1>
+        <h2>Sign Up</h2>
+        <form method="POST" action="register.php">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="phone/Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="confirm password" name="confirm password" placeholder="confirm Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+</body>
+</html>
