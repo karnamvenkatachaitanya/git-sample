@@ -1,7 +1,7 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: linear-gradient(120deg, #f6d365, #fda085, #a1c4fd, #c2e9fb);
     background-size: 300% 300%;
     animation: gradient 10s ease infinite;
@@ -38,56 +38,22 @@ body, html {
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
 }
 
-.tab-container {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 1.5rem;
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-.tab {
-    flex-grow: 1;
-    padding: 1rem;
-    background: #007BFF;
-    border: none;
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    border-radius: 5px;
-    margin: 0 5px;
-}
-
-.tab:hover {
-    background: #0056b3;
-    transform: scale(1.05);
-}
-
-.tab.active {
-    background: #0056b3;
-    transform: scale(1.05);
-}
-
-.form-container {
-    display: none;
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.form-container h1, .form-container h2 {
-    margin-bottom: 10px;
-    font-family: 'Pacifico', cursive;
+.form-container h1 {
+    font-family: 'Lobster', cursive;
     color: #333;
+    margin-bottom: 10px;
 }
 
 .form-container h2 {
+    font-family: 'Pacifico', cursive;
+    color: #333;
     margin-bottom: 20px;
 }
 
@@ -140,9 +106,4 @@ body, html {
 
 .form-container p a:hover {
     text-decoration: underline;
-}
-
-/* Display the active form */
-#login-form.active, #signup-form.active {
-    display: block;
 }
